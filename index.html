@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/estilo.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Verificador</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <label for="anoNasc">Ano de nascimento: <input type="number" name="anoNasc" id="anoNasc" placeholder="insira o ano que nasceu" min="0"></label><br>
+            <p>Genero: 
+            <label for="masc"><input type="radio" name="genero" value="1" id="H" >Homem</label>
+            <label for="fem"><input type="radio" name="genero" value="2" id="M">Mulher</label>
+            <input id="btnEnviar" type="button" value="verificar" onclick="verificar()">
+            </p>
+            
+        </div>
+        <div id="res">
+            Preencha os dados para ver o resultado...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Adryan Arthur</p>
+    </footer>
+
+    <script src="./src/instrucoes.js"></script>
+</body>
+</html>
