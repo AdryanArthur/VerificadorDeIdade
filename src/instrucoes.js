@@ -6,7 +6,7 @@ function verificar(){
     var anoAtual = new Date().getFullYear()
 
     if(anoNasc <= 0 || anoNasc > anoAtual || !generoEscolhido[0].checked && !generoEscolhido[1].checked){
-        alert("[ERRO] verifique os dados inseridos e tente novamente!")
+        alert("[ERRO] verifique se os dados foram inseridos corretamente e tente novamente!")
     }
     else{
         var image = document.createElement("img")
@@ -25,7 +25,7 @@ function verificar(){
                 fxEtaria = "adulto"
                 image.src = "./images/foto-adulto-m.png"
             }else{ //velho
-                fxEtaria = "idosa"
+                fxEtaria = "idoso"
                 image.src = "./images/foto-velho-m.png"
             }
         }

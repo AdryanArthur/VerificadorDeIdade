@@ -12,14 +12,13 @@
         <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div>
-            <label for="anoNasc">Ano de nascimento: <input type="number" name="anoNasc" id="anoNasc" placeholder="insira o ano que nasceu" min="0"></label><br>
+        <div id="inputs">
             <p>Genero: 
-            <label for="H"><input type="radio" name="genero" value="1" id="H" >Homem</label>
-            <label for="M"><input type="radio" name="genero" value="2" id="M">Mulher</label>
-            <input id="btnEnviar" type="button" value="verificar" onclick="verificar()">
+                <label><input type="radio" name="genero" value="1" id="H" >Homem</label>
+                <label><input type="radio" name="genero" value="2" id="M" placeholder="Mulher">Mulher</label>
             </p>
-            
+            <label for="anoNasc">Ano de nascimento: <input type="number" name="anoNasc" id="anoNasc" placeholder="0000"></label><br>
+            <input id="btnEnviar" type="button" value="verificar" onclick="verificar()">
         </div>
         <div id="res">
             Preencha os dados para ver o resultado...
