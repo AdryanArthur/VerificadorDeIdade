@@ -1,3 +1,5 @@
+document.querySelector("#anoNasc").addEventListener("keydown", (e)=>{if(e.key === "Enter"){verificar()}})
+
 function verificar(){
     var anoNasc = Number(document.querySelector("#anoNasc").value)
     var generoEscolhido = document.getElementsByName("genero")
