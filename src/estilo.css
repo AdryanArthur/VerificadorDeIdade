@@ -43,15 +43,18 @@ section{
         -webkit-appearance: none;
         margin: 0;
     }
+    input[type="radio"]:hover{
+        cursor: pointer;
+    }
 } 
 footer{
     color: aliceblue;
     text-align: center;
-    font: italic 12pt arial;
+    font: normal 12pt arial;
 
     a,:visited{
-        text-decoration: none;
         color: aliceblue;
+        font: italic 12pt arial;
     }
     a:hover{
         text-decoration: underline;
